@@ -1,5 +1,5 @@
 ---
-title: "Sharing your work"
+title: "Using BioHPC Storage" 
 teaching: 30
 exercises: 0
 questions:
