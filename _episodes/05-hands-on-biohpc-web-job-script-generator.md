@@ -1,5 +1,5 @@
 ---
-title: "GitHub Pages"
+title: "Hands on BioHPC – 2. Web Job Script Generator"
 teaching: 15
 exercises: 20
 questions:
