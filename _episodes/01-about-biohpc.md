@@ -8,9 +8,7 @@ objectives:
 - "Our services"
 - "BioHPC Business Model"
 keypoints:
-- "When you initialize a Git repository in a directory, Git starts tracking the changes you make inside that directory."
-- "This tracking creates a history of the way the files have changed over time."
-- "Git uses a two-step process to record changes to your files. Changes to files must first be added to the staging area, then committed to the Git repository."
+- "Questions? Please reach out to us: biohpc-help@utsouthwestern.edu."
 ---
 
 ### Overview
