@@ -1,5 +1,5 @@
 ---
-title: "Review"
+title: "Hands on BioHPC – 1. Manage Files with Lamella / Cloud Storage Gateway"
 teaching: 5
 exercises: 20
 questions:
