@@ -1,5 +1,11 @@
 ---
 title: "About BioHPC @ UT Southwestern"
+teaching: 20
+exercises: 0
+objectives:
+- "BioHPC membership"
+- "Our services"
+- "BioHPC Business Model"
 ---
 
 ### Overview
@@ -106,3 +112,15 @@ Two models of cloud client are available. The thin-client is a small desktop dev
 ### IB Network
 
 BioHPC Compute Nodes are interconnected via an Infiniband network in a fat-tree topology. The 10 HDR central swithes provide up to 80 Tbps total bandwidth. We are using HDR, EDR, FDR cables between 25 Mellanox switches and nodes and fiber cables between switches. The supporting port speeds can reach 56 Gbps and 100 Gbps respectively.
+
+### BioHPC Business Model
+
+* The UT Southwestern BioHPC team provides and maintains high-performance comuting, storage, and client systems for the UTSW research
+community
+
+* The business model can be summarized as "By the users - For the users"
+   * BioHPC team works directly with Department chair or administrator on resource requirements
+   * Department chair or administrator internally coordinates with PIs on the total expected amount of compute resources and storage
+
+* Questions? Please reach out to us: biohpc-help@utsouthwestern.edu
+
