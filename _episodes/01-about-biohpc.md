@@ -3,11 +3,14 @@ title: "About BioHPC @ UT Southwestern"
 teaching: 20
 exercises: 0
 questions:
+- "Who are the BioHPC member department?"
+- "What is the BioHPC Business Model"
 objectives:
 - "BioHPC membership"
 - "Our services"
 - "BioHPC Business Model"
 keypoints:
+- "BioHPC institutional resources are available to member departments"
 - "Questions? Please reach out to us: biohpc-help@utsouthwestern.edu."
 ---
 
