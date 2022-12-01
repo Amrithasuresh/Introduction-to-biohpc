@@ -1,5 +1,5 @@
 ---
-title: "GitHub Pages"
+title: "Hands on BioHPC"
 teaching: 15
 exercises: 20
 questions:
@@ -13,14 +13,19 @@ keypoints:
 - "GitHub Pages offer an automated way to create a website that is version controlled and accessible for collaboration"
 - "Collaborating on a GitHub Pages website uses the same Git/GitHub workflow you learned for collaborating via a GitHub repository"
 ---
-## GitHub Pages
+## Hands on BioHPC
 
 GitHub Pages is a simple service to publish a website directly on GitHub from a Git repository.
 You add some files and folders to a repository and GitHub Pages turns it into a website.
 You can use HTML directly if you like, but they also provide Jekyll,
 which renders Markdown into HTML and makes it really easy to setup a blog or a template-based website.
 
-### Why GitHub Pages is awesome!
+### 1. Manage Files with Lamella / Cloud Storage Gateway
+### 2. Web Job Script Generator
+### 3. Web Terminal
+### 4. Web Visualization: Graphical Interactive Session via Web Portal/VNC
+### 5. Software Modules
+### 6. OnDemand apps
 
 GitHub Pages allows you to version control your website. This is useful for a lot of different reasons. It allows you to
 keep a record of what changes you have made. It allows people to reference your website at a particular point in time
