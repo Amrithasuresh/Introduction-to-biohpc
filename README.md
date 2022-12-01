@@ -1,22 +1,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3265772.svg)](https://doi.org/10.5281/zenodo.3265772)
 
-# Maintainers for Library Carpentry: Introduction to Git
+# Maintainers for Library Carpentry: Introduction to BioHPC
 
-- [Christopher Felker](https://github.com/doingarchives)
-- [Drew Heles](https://github.com/dheles)
-- [Silvia di Giorgio](https://twitter.com/digiorgiosilvia)
-- [Eric Lopatin](https://github.com/elopatin-uc3)
-- [Elizabeth McAulay](https://github.com/emcaulay)
-
-Past Maintainers:
-
-- [Thea Atwood](https://github.com/tpatwood)
-- [Jez Cope](https://github.com/jezcope)
-- [Chris Erdmann](https://github.com/libcce)
-- [Katrin Leinweber](https://github.com/katrinleinweber)
-- [Chuck McAndrew](https://github.com/dcmcand)
-- [Eva Seidlmayer](https://github.com/EvaSeidlmayer)
-- [Belinda Weaver](https://github.com/weaverbel)
+- [Firstname Lastname](https://github.com/username)
 
 Lesson Maintainers communication is via the [team site](https://github.com/orgs/LibraryCarpentry/teams/lc-git-maintainers).
 
