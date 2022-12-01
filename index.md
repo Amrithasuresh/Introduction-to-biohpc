@@ -2,6 +2,11 @@
 layout: lesson
 root: .
 ---
+
+#### The lesson is not being developed by the Carpentries
+
+This looks like the Carpentries’ formatting of lessons because it is using their stylesheet (which is openly available for such purposes). However the similarity is visual-only: the lesson is not being developed by the Carpentries and has no association with the Carpentries.
+
 #### What We Will Try to Do
 
 **Begin** to understand and use Git/GitHub. You will not be an expert by the end of the class. You will probably not even feel very comfortable using Git. This is okay. We want to make a start but, as with any skill, using Git takes practice.
