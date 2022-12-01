@@ -1,5 +1,5 @@
 ---
-title: "Hands on BioHPC"
+title: "Hands on BioHPC -3. Web Terminal"
 teaching: 15
 exercises: 20
 questions:
