@@ -1,11 +1,11 @@
 ---
-title: "Getting started with git"
+title: "Getting started with biohpc"
 teaching: 20
 exercises: 0
 questions:
-- "What are repositories and how are they created?"
-- "What do `add` and `commit` mean?"
-- "How do I check the status of my repository?"
+- "What is HPC, and why do we need it?"
+- "What does BioHPC provide? - Cloud Services"
+- "What does BioHPC provide? - Software access"
 objectives:
 - "create a git repository"
 - "track changes to files using the git repository"
