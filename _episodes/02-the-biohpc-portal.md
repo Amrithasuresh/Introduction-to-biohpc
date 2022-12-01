@@ -1,5 +1,5 @@
 ---
-title: "Getting started with biohpc"
+title: "The BioHPC Portal"
 teaching: 20
 exercises: 0
 questions:
