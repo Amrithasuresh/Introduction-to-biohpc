@@ -93,3 +93,48 @@ Backups come in two basic forms:
 
   See the BioHPC Cloud Storage Guide for more information.
   Email biohpc-help@utsouthwester.edu to request recovering files.
+  
+### How can I create a BioHPC account, and access all of the services?
+
+Ensure with your department or center that you are eligible for membership with BioHPC. If you are not certain, please contact us. Once eligibility is confirmed, register for a BioHPC account  . Your account will not have full access to BioHPC services until you attend the mandatory new user training session held on the first Wednesday of each month from 10:30 AM - 12:00 PM on . The attendance list will be automatically taken once you attend the training session. Within two weeks, you will receive an e-mail notifying when your BioHPC account has been activated.
+  
+### Do I need to register for a training session before I attend?
+
+No, you don't need to register separately for the training sessions.
+  
+### The system says my account has expired, what can I do?
+
+This is because your password has expired. According to UTSW policy, you need to change your password annually. Click  to change your BioHPC password. 
+  
+### I suddenly cannot get access to BioHPC system, why is that?
+  
+In most case, it is because your password has expired. Please refer to the above question for solution. 
+  
+The situations you have may experience with an expired password are:
+
+* **SSH:** Your account has expired; please contact your system administrator.
+* **Lamella:** Access to your account on the server lamella.biohpc.swmed.edu has been denied.
+* **FileZilla:** Failed to connect.
+* **Network Drive:** Fail to connect.
+* **Web Visualization GUI session:** Connection refused.
+* **Thin Client:** Cannot login.
+  
+### How can I create a shared folder between two departments to share data?
+
+Please provide us the information below: 
+
+Which department will contribute the storage space required? We need assign a primary department to this folder.
+How much storage space is needed? We need approval from the primary department chair to assign storage space.
+Do you need a specific name for this folder? We will name it using the two PIs last names by default.
+  
+### My /project storage space is over quota, what can I do?
+  
+1) Decrease disk usage
+You may want to move files to your /archive directory. Usage on /archive will be calculated only as 2/3 of the actual usage. The archive directory structure is laid out similarly to /project. The default quota is 5 TB per lab, but it can be increased.
+
+2) Increase quota
+Your PI can ask the department chair for approval to increase the lab quota on /project. We will increase the quota with the department chair's email approval.
+  
+### Submit jobs using SECONDARY GROUP for accounting purpose with multiple projects/groups.
+
+By default when a user submits a job using sbatch, the system will account the CPU usages according to the user's primary group. In some situations, when a user has several secondary groups, and would like to run jobs and make the accounting of usage to the secondary group, the user can submit the job using the --gid=xxxx argument  (sbatch --gid=<the secondary group id> slurm_batch_script.sh) so that the usage can be accounted according to different collaborating groups/projects. 
