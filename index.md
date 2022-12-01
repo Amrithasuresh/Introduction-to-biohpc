@@ -3,7 +3,7 @@ layout: lesson
 root: .
 ---
 
-> ### The lesson is not being developed by the Carpentries
+> ## The lesson is not being developed by the Carpentries
 > 
 
 This looks like the Carpentries’ formatting of lessons because it is using their stylesheet (which is openly available for such purposes). However the similarity is visual-only: the lesson is not being developed by the Carpentries and has no association with the Carpentries.
