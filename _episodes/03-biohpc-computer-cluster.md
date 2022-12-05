@@ -29,7 +29,20 @@ We can search for a cufflinks module with module avail cufflinks, and then load 
 
 To use BioHPC software modules effectively, familiarize yourself with the following commands, which load, unload, list, search for, and display help about modules. Remember that you can contact biohpc-help@utsouthwestern.edu if you are unsure about a module, which version of a module to use, or if you need additional software setup.
 
-module list\
+~~~
+$ pwd
+~~~
+{: .language-bash}
+
+~~~
+Currently Loaded Modulefiles:
+  1) shared              2) slurm/16.05.8
+~~~
+{: .output}
+
+Here,
+the computer's response is list of default modules loaded
+
 Show loaded modules
 
 module avail\
