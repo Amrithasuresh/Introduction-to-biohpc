@@ -13,12 +13,10 @@ keypoints:
 - "GitHub Pages offer an automated way to create a website that is version controlled and accessible for collaboration"
 - "Collaborating on a GitHub Pages website uses the same Git/GitHub workflow you learned for collaborating via a GitHub repository"
 ---
-## GitHub Pages
+## Web visualization
 
-GitHub Pages is a simple service to publish a website directly on GitHub from a Git repository.
-You add some files and folders to a repository and GitHub Pages turns it into a website.
-You can use HTML directly if you like, but they also provide Jekyll,
-which renders Markdown into HTML and makes it really easy to setup a blog or a template-based website.
+You can reserve web visualization the portal https://portal.biohpc.swmed.edu/ --> Cloud Services --> Web Visualization
+
 
 ### Why GitHub Pages is awesome!
 
