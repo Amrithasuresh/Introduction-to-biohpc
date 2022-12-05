@@ -222,7 +222,7 @@ If you are using a Windows PC you will need to download an SSH client program. W
 The following commands are useful when working with Linux on BioHPC. See also the material from our Linux command line & scripting training session.
 
 ~~~
-$ quota –ugs\
+$ quota –ugs
 ~~~
 {: .language-bash}
 Show home directory and project directory quota and usage
@@ -328,7 +328,7 @@ $ cat script-example.sh
 Display a file on the screen
 
 ~~~
-[s211772@Nucleus074 Downloads]$ cat script-example 
+[s211772@Nucleus074 Downloads]$ cat script-example.sh 
 #!/bin/bash
 #SBATCH --job-name=serialJob                              # job name
 #SBATCH --partition=32GB                                 # select partion from 128GB, 256GB, 384GB, GPU and super
@@ -340,7 +340,7 @@ Display a file on the screen
 #SBATCH --mail-type=ALL                                   # send email when job status change (start, end, abortion and etc.)
 
 module load python/3.7.x-anaconda
-python --version > python-text.txt         # execute program
+python --version > python-text.txt                        # execute program
 conda activate test
 perl taxid2wgs.pl -title "gammaproteobacteria" -alias_file gammaproteobacteria-wgs 1236
 ~~~
