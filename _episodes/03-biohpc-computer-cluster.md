@@ -43,22 +43,137 @@ Currently Loaded Modulefiles:
 Here,
 the computer's response is list of default modules loaded
 
-Show loaded modules
 
-module avail\
-Show available modules
+~~~
+$ module avail python
+~~~
+{: .language-bash}
 
-module load <module name>\
+~~~
+------------------------------------------------- /cm/shared/modulefiles -----------------------------------------------------------------------------------------
+python/2.7.14-anaconda           python/2.7.5                     python/2.7.x-anaconda            python/3.4.x-anaconda            python/3.6.4-anaconda            python/3.8.x-anaconda
+python/2.7.3-epd                 python/2.7.6-epd                 python/3.3.2                     python/3.6.1-2-anaconda          python/3.7.x-anaconda            python-matlab-api/2019b/python36
+~~~
+{: .output}
+
+Here, the computer's response is list of python module available.
+
+~~~
+$ module avail R
+~~~
+{: .language-bash}
+
+~~~
+--------------------------------------------------- /cm/shared/modulefiles --------------------------------------------------------------------------------
+R/2.15.3-intel          R/3.1.0-intel           R/3.3.2-gccmkl_20181025 R/3.5.1-gccmkl          R/3.6.1-img             R/4.1.1-img             RSEM/1.2.31             Rtreemix/1.37.0
+R/3.0.2                 R/3.2.1-intel           R/3.4.1-gccmkl          R/3.5.1-gccmkl_20181025 R/4.0.2-gccmkl          ResMap/1.1.4            RSEM/1.3.0
+R/3.1.0                 R/3.3.2-gccmkl(default) R/3.4.1-gccmkl_20181025 R/3.6.1-gccmkl          R/4.1.1-gccmkl          ResMap/1.95             RSeQC/2.6.4
+~~~
+{: .output}
+
+Here, the computer's response is list of R moduled available.
+
+~~~
+$ module load <module name>
+~~~
 Load a module, setting paths and environment in the current session
 
-module unload <module name>\
+~~~
+$ module load python/3.8.x-anaconda
+~~~
+{: .language-bash}
+
+~~~
+$ module unload <module name>
+~~~
 Unload a module, removing it from the current session.
 
-module help <module name>\
+~~~
+$ module unload python/3.8.x-anaconda
+~~~
+Unload the python/3.8.x-anaconda, removing it from the current session. module list will show current loaded modules.
+
+~~~
+$ module help <module name>
+~~~
 Help notes for a module
 
-module –H\
+~~~
+$ module help python
+~~~
+Help notes for a module
+{: .language-bash}
+
+~~~
+----------- Module Specific Help for 'python/3.8.x-anaconda' ---------------------------
+
+Loads the Continuum Analytics Anaconda Scientific Python Distribution
+  ** Python 3.8, anaconda version 2021.05 ** 
+
+195+ of the most popular Python packages for science, math, engineering, data analysis
+  NumPy
+  SciPy
+  MatPlotLib
+  Scikits-learn
+For a package list see: 
+  http://docs.continuum.io/anaconda/pkg-docs.html
+
+Environmental variables defining
+the location of the Python binaries and libraries: 
+PYTHON_DIR, PYTHON_BIN, PYTHON_LIB
+
+It also updates the values of the PATH, the PYTHONPATH,
+PYTHONHOME, and the LD_LIBRARY_PATH variables.
+~~~
+{: .output}
+
+~~~
+$ module –H\
+~~~
+{: .language-bash}
 Help for the module command
+
+~~~
+  Modules Release 3.2.10 2012-12-21 (Copyright GNU GPL v2 1991):
+
+  Usage: module [ switches ] [ subcommand ] [subcommand-args ]
+
+Switches:
+	-H|--help		this usage info
+	-V|--version		modules version & configuration options
+	-f|--force		force active dependency resolution
+	-t|--terse		terse    format avail and list format
+	-l|--long		long     format avail and list format
+	-h|--human		readable format avail and list format
+	-v|--verbose		enable  verbose messages
+	-s|--silent		disable verbose messages
+	-c|--create		create caches for avail and apropos
+	-i|--icase		case insensitive
+	-u|--userlvl <lvl>	set user level to (nov[ice],exp[ert],adv[anced])
+  Available SubCommands and Args:
+	+ add|load		modulefile [modulefile ...]
+	+ rm|unload		modulefile [modulefile ...]
+	+ switch|swap		[modulefile1] modulefile2
+	+ display|show		modulefile [modulefile ...]
+	+ avail			[modulefile [modulefile ...]]
+	+ use [-a|--append]	dir [dir ...]
+	+ unuse			dir [dir ...]
+	+ update
+	+ refresh
+	+ purge
+	+ list
+	+ clear
+	+ help			[modulefile [modulefile ...]]
+	+ whatis		[modulefile [modulefile ...]]
+	+ apropos|keyword	string
+	+ initadd		modulefile [modulefile ...]
+	+ initprepend		modulefile [modulefile ...]
+	+ initrm		modulefile [modulefile ...]
+	+ initswitch		modulefile1 modulefile2
+	+ initlist
+	+ initclear
+~~~
+{: .output}
 
 You could also check the availabe module through portal - software - module browser.
   
