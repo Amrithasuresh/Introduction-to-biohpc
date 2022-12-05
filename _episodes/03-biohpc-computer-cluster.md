@@ -228,7 +228,7 @@ $ quota –ugs\
 Show home directory and project directory quota and usage
 
 ~~~
-Disk quotas for user suresh (uid suresh):
+Disk quotas for user s178337 (uid s178337):
      Filesystem   space   quota   limit   grace   files   quota   limit   grace
 lysosomehome:/home
                  42070M  51200M  71680M            320k       0       0
@@ -236,7 +236,7 @@ lysosomehome:/home
 {: .output}
 
 ~~~
-du –sh <directory>\
+du –sh <directory>
 Show size of a specific directory and it’s contents
 ~~~
 
@@ -250,21 +250,102 @@ $du -sh Downloads
 ~~~
 {: .output}
 
+~~~
+$squeue
+~~~
+{: .language-bash}
 
+~~~
+[s178337@Nucleus006 ~]$ squeue 
+  JOBID PARTITION     NAME     USER  ST       TIME  NODES NODELIST(REASON)
+ 630904   256GBv1   webGUI  s159113   R    1:17:37      1 Nucleus154
+ 628850      32GB   webGUI  s175864   R   19:32:24      1 NucleusA061
+ 628852      32GB   webGUI  s180052   R   19:29:18      1 NucleusA054
+ 629113      32GB   webGUI  s164085   R   18:09:51      1 NucleusA009
+ 630277      32GB   webGUI  s178722   R    2:47:10      1 NucleusA019
+ 630354      32GB   webGUI  s170446   R    2:37:06      1 NucleusA012
+ 630620      32GB   webGUI  s156240   R    1:43:04      1 NucleusA033
+ 630621      32GB   webGUI hatawang   R    1:41:29      1 NucleusA002
+ 630876      32GB   webGUI  s171489   R    1:40:07      1 NucleusA037
+ 630898      32GB   webGUI  s177630   R    1:21:22      1 NucleusA059
+ 621067       GPU D2K00008 ansir_fm   R 8-03:11:57      1 Nucleus046
+~~~
+{: .output}
+
+~~~
 squeue -u suresh
+~~~
+{: .language-bash}
 Show cluster job information
 
-sinfo\
+~~~
+[s178337@Nucleus006 ~]$ squeue -u s178337
+JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+3777109     256GB   webGUI  s178337  R    7:00:49      1 Nucleus074
+~~~
+{: .output}
+
+~~~
+$ sinfo
+~~~
+{: .language-bash}
+
 Show cluster node status
 
-sbatch myscript.sh\
+~~~
+[s178337@Nucleus006 ~]$ sinfo
+PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
+256GB        up   infinite     77  alloc Nucleus[034-041,050-063,065-081,084-121]
+256GB        up   infinite      1   idle Nucleus064
+384GB        up   infinite      2  alloc Nucleus[082-083]
+256GBv1      up   infinite     48  alloc Nucleus[126-157,174-189]
+super        up   infinite      1 drain* NucleusA013
+super        up   infinite    203  alloc Nucleus[010-041,050-063,065-121,126-157,174-189],NucleusA[002-012,014-034,037,054-068,078-081]
+super        up   infinite     28   idle Nucleus064,NucleusA[035-036,038-053,069-077]
+GPU          up   infinite     16  alloc Nucleus[043-047,049,162-165,167-171,173]
+GPU          up   infinite      4   idle Nucleus[042,048,166,172]
+128GB*       up   infinite     24  alloc Nucleus[010-033]
+PHG          up   infinite      7  alloc Nucleus[122-125,158-160]
+PHG          up   infinite      1   idle Nucleus161
+GPUv1        up   infinite     10  alloc Nucleus[162-165,167-171,173]
+GPUv1        up   infinite      2   idle Nucleus[166,172]
+32GB         up   infinite      1 drain* NucleusA013
+32GB         up   infinite     52  alloc NucleusA[002-012,014-034,037,054-068,078-081]
+32GB         up   infinite     27   idle NucleusA[035-036,038-053,069-077]
+~~~
+{: .output}
+
+~~~
+sbatch myscript.sh
+~~~
+{: .language-bash}
 Submit a cluster batch job using a script file
 
-cat filename\
+~~~
+$ cat script-example.sh
+~~~
+{: .language-bash}
 Display a file on the screen
 
-less filename\
-Displays a file so that you can scroll up and down. ‘q’ or ctrl-c quits
+~~~
+[s211772@Nucleus074 Downloads]$ cat script-example 
+#!/bin/bash
+#SBATCH --job-name=serialJob                              # job name
+#SBATCH --partition=32GB                                 # select partion from 128GB, 256GB, 384GB, GPU and super
+#SBATCH --nodes=1                                         # number of nodes requested by user
+#SBATCH --time=0-00:00:30                                 # run time, format: D-H:M:S (max wallclock time)
+#SBATCH --output=serialJob.%j.out                         # standard output file name
+#SBATCH --error=serialJob.%j.time                         # standard error output file name
+#SBATCH --mail-user=username@utsouthwestern.edu           # specify an email address
+#SBATCH --mail-type=ALL                                   # send email when job status change (start, end, abortion and etc.)
+
+module load python/3.7.x-anaconda
+python --version > python-text.txt         # execute program
+conda activate test
+perl taxid2wgs.pl -title "gammaproteobacteria" -alias_file gammaproteobacteria-wgs 1236
+~~~
+{: .output}
+
 
 vi or vim\
 Powerful text editors, with a cryptic set of commands! See
