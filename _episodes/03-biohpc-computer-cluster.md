@@ -221,16 +221,37 @@ If you are using a Windows PC you will need to download an SSH client program. W
   
 The following commands are useful when working with Linux on BioHPC. See also the material from our Linux command line & scripting training session.
 
-quota –ugs\
+~~~
+$ quota –ugs\
+~~~
+{: .language-bash}
 Show home directory and project directory quota and usage
 
-panfs_quota -G /work\
-Show work directory quota and usage
+~~~
+Disk quotas for user suresh (uid suresh):
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+lysosomehome:/home
+                 42070M  51200M  71680M            320k       0       0
+~~~
+{: .output}
 
+~~~
 du –sh <directory>\
 Show size of a specific directory and it’s contents
+~~~
 
-squeue\
+~~~
+$du -sh Downloads
+~~~
+{: .language-bash}
+
+~~~
+348K	Downloads/
+~~~
+{: .output}
+
+
+squeue -u suresh
 Show cluster job information
 
 sinfo\
